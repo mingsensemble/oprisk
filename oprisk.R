@@ -9,7 +9,7 @@ dtrunc <- function(x, spec, a, b, log = F, ...) {
 	if (log == F) {
 		return(dd(x, ...)/(pd(b, ...) - pd(a, ...)))
 	} else if (log == T) {
-		return(dd(x, log = T) - log(pd(b, ...) - pd(a, ...)))
+		return(dd(x, log = T, ...) - log(pd(b, ...) - pd(a, ...)))
 	}
 }
 # cdf for a truncated random variable
